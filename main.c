@@ -217,6 +217,9 @@ int main(void){
         
         
         printf("\nOutput of bayesian classifier : %f\n", similarity);
+        if (similarity > 0.1) printf("\nmatched\n");
+        else printf ("\nnot matched\n");
+        
         fclose(f1);
     }
         
